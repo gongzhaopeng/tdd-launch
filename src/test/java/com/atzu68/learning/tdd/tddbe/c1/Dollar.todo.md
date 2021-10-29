@@ -3,5 +3,5 @@
 > ~~$5 * 2 = $10~~
 ---
 - Make "amount" private
-- Dollar side-effects?
+- ~~Dollar side-effects?~~
 - Money rounding?
