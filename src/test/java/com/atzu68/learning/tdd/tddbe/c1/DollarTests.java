@@ -2,7 +2,7 @@ package com.atzu68.learning.tdd.tddbe.c1;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class DollarTests {
 
@@ -14,5 +14,11 @@ public class DollarTests {
         assertEquals(10, product.amount);
         product = five.times(3);
         assertEquals(15, product.amount);
+    }
+
+    @Test
+    void equality() {
+        assertEquals(new Dollar(5), new Dollar(5));
+        assertNotEquals(new Dollar(5), new Dollar(6));
     }
 }
