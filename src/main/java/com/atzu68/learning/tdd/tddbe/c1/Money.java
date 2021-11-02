@@ -1,6 +1,6 @@
 package com.atzu68.learning.tdd.tddbe.c1;
 
-class Money {
+class Money implements Expression {
 
     static Money dollar(int amount) {
         return new Money(amount, "USD");
@@ -24,6 +24,10 @@ class Money {
 
     Money times(int multiplier) {
         return new Money(amount * multiplier, currency);
+    }
+
+    Expression plus(Money addend) {
+        return new Money(amount + addend.amount, currency);
     }
 
     @Override
