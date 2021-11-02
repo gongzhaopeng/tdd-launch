@@ -28,4 +28,4 @@
 
 > ~~Currency?~~
 
-> Delete FrancTests.multiplication?
+> ~~Delete FrancTests.multiplication?~~
