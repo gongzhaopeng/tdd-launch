@@ -1,8 +1,8 @@
 package com.atzu68.learning.tdd.tddbe.c1;
 
-public class Dollar extends Money {
+public class Franc extends Money {
 
-    Dollar(int amount, String currency) {
+    Franc(int amount, String currency) {
         super(amount, currency);
     }
 
@@ -11,6 +11,6 @@ public class Dollar extends Money {
     }
 
     Money times(int multiplier) {
-        return Money.dollar(amount * multiplier);
+        return Money.franc(amount * multiplier);
     }
 }
