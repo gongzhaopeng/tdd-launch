@@ -2,6 +2,10 @@
 
 > **$5 + $5 = $10**
 
+> Return Money from $5 + $5
+
+> ~~Bank.reduce(Money)~~
+
 > ~~$5 * 2 = $10~~
 
 > ~~Make "amount" private~~
@@ -20,7 +24,7 @@
 
 > ~~5 CHF * 2 = 10 CHF~~
 
-> Dollar/Franc duplication
+> ~~Dollar/Franc duplication~~
 
 > ~~Common equals~~
 
