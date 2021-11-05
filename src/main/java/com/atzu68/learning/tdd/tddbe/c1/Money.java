@@ -37,8 +37,8 @@ class Money implements Expression {
 
     @Override
     public boolean equals(Object o) {
-        Money money = (Money) o;
-        return amount == money.amount
+        return o instanceof Money money
+                && amount == money.amount
                 && currency().equals(money.currency());
     }
 

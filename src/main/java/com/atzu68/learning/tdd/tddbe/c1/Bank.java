@@ -2,16 +2,17 @@ package com.atzu68.learning.tdd.tddbe.c1;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 class Bank {
 
-    private Map<Pair, Integer> rates = new HashMap<>();
+    private final Map<Pair, Integer> rates = new HashMap<>();
 
-    Money reduce(Expression source, String to) {
+    public Money reduce(Expression source, String to) {
         return source.reduce(this, to);
     }
 
-    void addRate(String from, String to, int rate) {
+    public void addRate(String from, String to, int rate) {
         rates.put(new Pair(from, to), rate);
     }
 
@@ -24,13 +25,15 @@ class Bank {
 
         @Override
         public boolean equals(Object o) {
-            Pair pair = (Pair) o;
-            return from.equals(pair.from) && to.equals(pair.to);
+
+            return o instanceof Pair pair
+                    && from.equals(pair.from)
+                    && to.equals(pair.to);
         }
 
         @Override
         public int hashCode() {
-            return 0;
+            return Objects.hash(from, to);
         }
     }
 }

@@ -24,11 +24,11 @@
 
 > ~~equals()~~
 
-> hashCode()
+> ~~hashCode()~~
 
-> Equal null
+> ~~Equal null~~
 
-> Equal object
+> ~~Equal object~~
 
 > ~~5 CHF * 2 = 10 CHF~~
 
