@@ -103,4 +103,10 @@ public class MoneyTests {
         Money result = bank.reduce(sum, "USD");
         assertEquals(Money.dollar(20), result);
     }
+
+    @Test
+    void moneyToString() {
+        Money fiveBucks = Money.dollar(5);
+        assertEquals("5 USD", fiveBucks.toString());
+    }
 }
