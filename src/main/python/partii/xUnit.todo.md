@@ -1,6 +1,6 @@
-> ~~**Invoke test method**~~
+> ~~Invoke test method~~
 
-> Invoke setUp first
+> ~~**Invoke setUp first**~~
 
 > Invoke tearDown afterword
 
