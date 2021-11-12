@@ -6,7 +6,7 @@
 
 > Invoke tearDown even if the test method fails
 
-> Run multiple tests
+> ~~Run multiple tests~~
 
 > ~~Report collected results~~
 
@@ -15,3 +15,5 @@
 > ~~Report failed tests~~
 
 > Catch and report setup errors
+
+> Create TestSuite from a TestCase class
