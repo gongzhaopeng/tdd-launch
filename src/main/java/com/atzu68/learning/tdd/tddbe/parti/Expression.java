@@ -1,4 +1,4 @@
-package com.atzu68.learning.tdd.tddbe.c1;
+package com.atzu68.learning.tdd.tddbe.parti;
 
 interface Expression {
 
